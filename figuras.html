@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso práctico de JS </title>
+    <link rel="stylesheet" href="./figuras.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras Geométricas
+        </h1>
+        <p> Este es el primer taller del curso práctico de JS </p>
+    </header>
+
+    <main id="container">
+        <section id="square">
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
+    
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number">
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+            </form>
+        </section>
+    
+        <section id="triangle">
+            <h2>Calcula el área y perímetro de un triángulo</h2>
+    
+            <form action="">
+    
+                <label for="InputTriangle1">
+                    Escribe cuanto mide el primer lado de tu triángulo:
+                </label>
+                <input id="InputTriangle1" type="number">
+    
+                <label for="InputTriangle2">
+                    Escribe cuanto mide el segundo lado de tu triángulo:
+                </label>
+                <input id="InputTriangle2" type="number">
+    
+                <label for="InputTriangle3">
+                    Escribe cuanto mide la base de tu triángulo:
+                </label>
+                <input id="InputTriangle3" type="number">
+                
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+    
+                <label for="InputTriangle4">
+                    Escriba la altura de tu triángulo
+                </label>
+                <input id="InputTriangle4" type="number">
+    
+                <label for="InputTriangle5">
+                    Escribe cuanto mide la base de tu triángulo:
+                </label>
+                <input id="InputTriangle5" type="number">
+    
+                <button type="button" onclick="calculateAreaTriangle()">Calcular el area</button>
+    
+                <label for="InputSideIsosceles">
+                    (Opcional triangulo isosceles) - Si quieres hallar la altura de tu triángulo Isosceles Ingresa el valor lado a
+                </label>
+                <input id="InputSideIsosceles" type="number">
+    
+                <label for="InputSideIsosceles2">
+                    Ingresa el valor del lado b
+                </label>
+                <input id="InputSideIsosceles2" type="number">
+    
+                <label for="InputBaseIsosceles"> 
+                    Ingresa base de tu triángulo
+                </label>
+                <input type="number" id="InputBaseIsosceles">
+                <button type="button" onclick="calculateHeigthIsosceles()">Calculate heigth</button>
+    
+            </form>
+        </section>
+    
+        <section id="circumference">
+            <h2>Calcula el área y perímetro de un círculo</h2>
+    
+            <form action="">
+                <label for="InputCirculo">
+                    Escribe cuanto mide el radio de tu circulo:
+                </label>
+                <input id="InputCircumference" type="number">
+                <button type="button" onclick="calculateDiameter()">Calculate Diameter</button>
+                <button type="button" onclick="calculateCircumferencePerimeter()">Calculate perimeter</button>
+                <button type="button" onclick="calculateCircumferenceArea()">Calculate area</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>No se que poner aquí</p>
+        </section>
+    </footer>
+<script src="./figuras.js" ></script>
+</body>
+</html>
